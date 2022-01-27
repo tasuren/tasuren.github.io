@@ -1,0 +1,13 @@
+^^ self.extends(
+    "layout.html", main="""
+    <h2 id="home">Links</h2>
+    tasurenに関係するリンク集です。
+    <ul>
+        <li><a href="http://tasuren.f5.si">ウェブサイト</a></li>
+        <li><a href="https://discord.gg/kfMwZUyGFG">Discordサーバー</a></li>
+        <li><a href="https://twitter.com/tasuren1">Twitter</a></li>
+        <li><a href="https://www.youtube.com/channel/UCHAumff8r8ZFnRpABLoQSnQ">YouTube</a></li>
+        <li><a href="https://github.com/tasuren">GitHub</a></li>
+    </ul>
+    """
+) ^^

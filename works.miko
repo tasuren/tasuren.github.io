@@ -1,0 +1,18 @@
+^^ self.extends(
+    "layout.html", main="""
+    <h2 id="works">Works</h2>
+    主な成果物です。
+    <h3>miko テンプレートエンジン</h3>
+    Python用の高速で小さく軽量なテンプレートエンジンです。<br>
+    Pythonで主流のテンプレートエンジンであるjinjaと違い構文がPythonになってるので、新しく覚える構文があまりありません。<br>
+    Pythonでウェブサービスを開発する人にとっては最高なものです。<br>
+    <a href="https://github.com/tasuren/miko" target="_blank">リポジトリを見る</a>
+    <h3>RT Discord Bot</h3>
+    Discordというチャットアプリで使える便利なBotです。<br>
+    LINEで例えると通話中に送ったメッセージを読み上げてくれたりすることができます。<br>
+    主にバックエンドの開発を行なっており、最近はフロントエンド側も開発しています。<br>
+    また、サーバー管理等も私が行なっています。<br>
+    ちなみにウェブサイトでは上に書いたmikoテンプレートエンジンを使用しています。<br>
+    <a href="https://rt-bot.com">ウェブサイトを見る</a>
+    """
+) ^^

@@ -1,0 +1,87 @@
+/* tcw - CSS */
+
+
+:root {
+    --text-color: #2b2b2b;
+    --background-color: #ffffff;
+    --link-color: #507ea4;
+}
+:root[theme="dark"] {
+    --text-color: #E9EEF3;
+    --background-color: #000000;
+    --link-color: #7dc4ff;
+}
+
+/* メニューバー */
+header { width: 100%; }
+header h1 {
+    float: left;
+    padding: 0 7%;
+}
+header ul {
+    padding: 0 5%;
+    float: right;
+    list-style: none;
+    display: -webkit-flex;
+    display: flex;
+    -webkit-justify-content: space-between;
+    justify-content: space-between;
+    vertical-align: middle;
+}
+header li {
+    padding: 15px;
+    text-align: center;
+}
+
+/* ボタンデザインをリセット */
+button {
+    background-color: transparent;
+    border: none;
+    cursor: pointer;
+    outline: none;
+    font-size: larger;
+    appearance: none;
+}
+
+/* Main */
+html {
+    scroll-padding-top: 15%;
+}
+
+body {
+    font-family: "M PLUS Rounded 1c", sans-serif;
+    color: var(--text-color);
+    background-color: var(--background-color);
+    position: relative;
+}
+
+.main {
+    padding: 5% 15%;
+    position: absolute;
+    top: 0;
+}
+
+.flex {
+    display: -webkit-flex;
+    display: flex;
+}
+
+/* URLのリンクの配色 */
+a { font-size: medium; }
+a:link { color: var(--link-color); text-decoration: none; }
+a:visited { color: var(--link-color); text-decoration: none; }
+a:hover { color: var(--link-color); text-decoration: none; }
+a:active { color: var(--link-color); text-decoration: none; }
+
+/* none decoration */
+.none-decoration { padding: 0 3%; list-style: none; }
+
+/* スマホの場合はヘッダーを消したり調整をする。 */
+@media (min-width: 749px){
+    .sp { display: none; }
+}
+@media (max-width: 750px){
+    .pc { display: none; }
+    .flex { display: block; }
+    .main { padding: 5%; }
+}

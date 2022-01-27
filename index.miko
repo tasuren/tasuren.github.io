@@ -1,0 +1,9 @@
+^^ self.extends(
+    "layout.html", main="""
+    <h2 id="home">tasurenのポートフォリオ</h2>
+    どうも、tasurenです。<br>
+    ここはtasurenという人のポートフォリオのウェブサイトです。<br>
+    最低限のものしかありません。<br>
+    tasurenについての情報はメニューのAboutなどに記載されています。
+    """
+) ^^

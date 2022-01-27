@@ -1,0 +1,15 @@
+^^ self.extends(
+    "layout.html", main="""
+    <h2 id="about">About</h2>
+    現在高校生のフルスタックエンジニアです。<br>
+    主にPython,Rustを使ってバックエンドの開発をしており、RTというサービスのオーナー、そして運営をしています。<br>
+    そのRTというサービスのサーバーの保守等もやっています。<br>
+    「モダンな人間になる」が座右の銘でなるべく楽して上手くいくように工夫して人生を歩んでいこうと思っています。
+    <h2 id="contact">Contact</h2>
+    何か伝えたいことがあったりする場合は遠慮なく以下までお願いします。<br>
+    <ul>
+      <li>メール：<a href="mailto:tasuren@aol.com">tasuren@aol.com</a></li>
+      <li>Discord: <code>tasuren#5161</code></li>
+    </ul>
+    """
+) ^^

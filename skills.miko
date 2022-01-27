@@ -1,0 +1,29 @@
+^^ self.extends(
+    "layout.html", main="""
+    <h2 id="skills">Skills</h2>
+    できるもの一覧です。
+    <h3>Languages</h3>
+    <ul>
+        <li>Python</li>
+        <li>Rust</li>
+        <li>SQL</li>
+        <li>C</li>
+        <li>HTML</li>
+        <li>CSS</li>
+        <li>JavaScript</li>
+        <li><a href="http://brython.info">Brython</a></li>
+    </ul>
+    <h3>Other</h3>
+    <ul>
+        <li>Bootstrap</li>
+        <li>jQuery</li>
+        <li>Python Web Frameworks</li>
+        <ul>
+            <li><a href="https://sanic.dev/">Sanic</a></li>
+            <li>Flask</li>
+            <li>django</li>
+        </ul>
+        <li>MySQL</li>
+    </ul>
+    """
+) ^^
