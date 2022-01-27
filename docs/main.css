@@ -14,11 +14,11 @@
 
 /* メニューバー */
 header { width: 100%; }
-header h1 {
+header.pc h1 {
     float: left;
     padding: 0 7%;
 }
-header ul {
+header.pc ul {
     padding: 0 5%;
     float: right;
     list-style: none;
@@ -28,7 +28,7 @@ header ul {
     justify-content: space-between;
     vertical-align: middle;
 }
-header li {
+header.pc li {
     padding: 15px;
     text-align: center;
 }
@@ -77,10 +77,10 @@ a:active { color: var(--link-color); text-decoration: none; }
 .none-decoration { padding: 0 3%; list-style: none; }
 
 /* スマホの場合はヘッダーを消したり調整をする。 */
-@media (min-width: 749px){
+@media (min-width: 639px){
     .sp { display: none; }
 }
-@media (max-width: 750px){
+@media (max-width: 640px){
     .pc { display: none; }
     .flex { display: block; }
     .main { padding: 5%; }

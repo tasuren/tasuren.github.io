@@ -31,4 +31,17 @@ window.onload = function () {
     for (let element of document.getElementsByTagName("a"))
         if (element.getAttribute("href").startsWith("http"))
             element.setAttribute("target", "_blank");
+    // スマホ用のメニューボタンが押された際にコンテンツの変更をするようにする。
+    let main = document.getElementById("main");
+    let menu = document.getElementById("menu");
+    if (window.matchMedia && window.matchMedia('(max-device-width: 640px)').matches) {
+        main.style.display = main.style.display == "none" ? "block" : "none";
+        if (menu.classList.contains("pc")) {
+            menu.classList.remove("pc");
+            menu.classList.add("sp");
+        } else {
+            menu.classList.remove("sp");
+            menu.classList.add("pc");
+        };
+    };
 };
