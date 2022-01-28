@@ -12,13 +12,31 @@
     --link-color: #7dc4ff;
 }
 
-/* メニューバー */
-.menu {
-    padding: 0 7%;
+/* メニューバーとメインコンテンツ(main) */
+@media (min-width: 639px) {
+    .menu {
+        display: -webkit-flex;
+        display: flex;
+        -webkit-justify-content: space-around;
+        justify-content: space-around;
+        align-items: center;
+    }
+    .menu a, .menu button { padding: 3%; font-size: 1.2em; }
+
+    .main { padding: 3% 13%; }
+}
+@media (max-width: 640px) {
+    .menu h1, .menu div { text-align: center; }
+
+    .main { padding: 5%; }
+}
+
+/* リンクリスト */
+.menu div {
     display: -webkit-flex;
     display: flex;
-    -webkit-justify-content: space-between;
-    justify-content: space-between;
+    -webkit-justify-content: space-around;
+    justify-content: space-around;
     align-items: center;
 }
 
@@ -37,13 +55,6 @@ body {
     font-family: "M PLUS Rounded 1c", sans-serif;
     color: var(--text-color);
     background-color: var(--background-color);
-    position: relative;
-}
-
-.main {
-    padding: 10% 15%;
-    position: absolute;
-    top: 0;
 }
 
 /* URLのリンクの配色 */
@@ -55,9 +66,3 @@ a:active { color: var(--link-color); text-decoration: none; }
 
 /* none decoration */
 .none-decoration { padding: 0 3%; list-style: none; }
-
-/* スマホの場合はヘッダーを消したり調整をする。 */
-@media (min-width: 639px){}
-@media (max-width: 640px) {
-    .main { padding: 5%; }
-}

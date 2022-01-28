@@ -2,14 +2,18 @@
     "layout.html", main="""
     <h2 id="about">About</h2>
     現在高校生のフルスタックエンジニアです。<br>
-    主にPython,Rustを使ってバックエンドの開発をしており、RTというサービスのオーナー、そして運営をしています。<br>
+    主にPythonやRustを使ってバックエンドの開発をしており、RTというサービスのオーナー、そして運営をしています。<br>
     そのRTというサービスのサーバーの保守等もやっています。<br>
-    「モダンな人間になる」が座右の銘でなるべく楽して上手くいくように工夫して人生を歩んでいこうと思っています。
+    「モダンな人間になる」が座右の銘で今までにない新しいやり方をしていく人生を歩んでいこうと思っています。<br>
+    また、効率的かつなるべく楽に良い結果をだせる作業をするようにいつも心がけています。<br>
     <h2 id="contact">Contact</h2>
     何か伝えたいことがあったりする場合は遠慮なく以下までお願いします。<br>
     <ul>
       <li>メール：<a href="mailto:tasuren@aol.com">tasuren@aol.com</a></li>
       <li>Discord: <code>tasuren#5161</code></li>
     </ul>
+    <h2 id="BuyMeACoffee">Buy Me a Coffee</h2>
+    また、僕を支援してくれると嬉しいです。<br><br>
+    <script type="text/javascript" src="https://cdnjs.buymeacoffee.com/1.0.0/button.prod.min.js" data-name="bmc-button" data-slug="tasuren" data-color="#e9eef3" data-emoji=""  data-font="Cookie" data-text="Buy me a coffee" data-outline-color="#000000" data-font-color="#000000" data-coffee-color="#FFDD00" ></script>
     """
 ) ^^
