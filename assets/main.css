@@ -1,0 +1,80 @@
+/* tcw - CSS */
+
+
+* { box-sizing: border-box; }
+.late-transition { transition: .5s; }
+
+
+:root {
+    --text-color: #2b2b2b;
+    --background-color: #ffffff;
+    --link-color: #507ea4;
+}
+:root[theme="dark"] {
+    --text-color: #E9EEF3;
+    --background-color: #000000;
+    --link-color: #7dc4ff;
+}
+
+
+/* メニューバーとメインコンテンツ(main) */
+@media (min-width: 930px) {
+    header { justify-content: space-between; }
+    nav ul { display: flex; }
+    nav li { margin: 0 10px; }
+    .title { font-size:  50px; }
+    nav li a { font-size: 30px; }
+
+    body { padding: 0 7%; font-size: 24px; }
+    .main { padding: 1% 0.3%; }
+}
+@media (max-width: 930px) {
+    header { justify-content: space-evenly; }
+    nav h1, .menu div { text-align: center; }
+    .title { font-size:  40px; }
+    nav li { margin-right: 20px; margin-top: 8px; }
+
+    span { display: inline-block; }
+    body { padding: 5%; }
+}
+
+header {
+    display: flex;
+    align-items: center;
+    padding-top: 3%;
+}
+
+.title { font-weight: bold; }
+nav ul {
+    list-style: none; 
+    align-items: center;
+}
+
+/* ボタンデザインをリセット */
+button {
+    background-color: transparent;
+    border: none;
+    cursor: pointer;
+    outline: none;
+    font-size: larger;
+    appearance: none;
+}
+
+
+/* Main */
+body {
+    font-family: "M PLUS Rounded 1c", sans-serif;
+    color: var(--text-color);
+    background-color: var(--background-color);
+    overflow-y: scroll;
+}
+
+/* URLのリンクの配色 */
+a { font-size: medium; }
+a:link { color: var(--link-color); text-decoration: none; }
+a:visited { color: var(--link-color); text-decoration: none; }
+a:hover { color: var(--link-color); text-decoration: none; }
+a:active { color: var(--link-color); text-decoration: none; }
+
+/* none decoration */
+.none-decoration { padding: 0 3%; list-style: none; }
