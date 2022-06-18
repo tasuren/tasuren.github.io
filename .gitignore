@@ -2,3 +2,5 @@
 __pycache__
 *.*-workspace
 *.*-project
+outputs
+.pyssg_caches.json

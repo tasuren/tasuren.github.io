@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html lang="ja" theme="dark">
+  <head>
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta charset="utf-8">
+    <title>^^ self.ctx.title or self.ctx.metadata.title ^^</title>
+    <meta name="description" content="tasurenのポートフォリオです。">
+    <meta name="author" content="tasuren">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <!-- Assets -->
+    <link rel="stylesheet" href="/assets/main.css">
+    <script src="/assets/main.js"></script>
+    <!-- Font -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=M+PLUS+Rounded+1c:wght@300&display=swap" rel="stylesheet">
+    <!-- Other -->
+    ^^ self.ctx.head ^^
+  </head>
+  <body>
+    <header>
+      <div class="title">tasuren</div>
+      <nav>
+        <div class="menu">
+          <ul>
+            ^^
+            if "menu" not in self.ctx:
+              # まだメニューが作られていないのなら作る。また、キャッシュを作る。
+              from os import listdir
+
+              self.ctx.menu = "\n".join(
+                '<li><a href="{}.html">{}</a></li>'.format(
+                  filename, "Home" if filename == "index" else filename.capitalize()
+                )
+                for filename in ("index", "about", "skills", "works", "links")
+              )
+
+            self.ctx.menu
+            ^^
+            <li><button name="toggle-darkmode" onclick="toggleDarkmode(true, true)">🌓</button></li>
+          </ul>
+        </div>
+      </nav>
+    </header>
+    <div class="main">^^ self.content ^^</div>
+  </body>
+</html>

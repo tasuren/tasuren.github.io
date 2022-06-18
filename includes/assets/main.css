@@ -1,6 +1,10 @@
 /* tcw - CSS */
 
 
+* { box-sizing: border-box; }
+.late-transition { transition: .5s; }
+
+
 :root {
     --text-color: #2b2b2b;
     --background-color: #ffffff;
@@ -12,31 +16,37 @@
     --link-color: #7dc4ff;
 }
 
+
 /* メニューバーとメインコンテンツ(main) */
-@media (min-width: 639px) {
-    .menu {
-        display: -webkit-flex;
-        display: flex;
-        -webkit-justify-content: space-around;
-        justify-content: space-around;
-        align-items: center;
-    }
-    .menu a, .menu button { padding: 3%; font-size: 1.2em; }
+@media (min-width: 930px) {
+    header { justify-content: space-between; }
+    nav ul { display: flex; }
+    nav li { margin: 0 10px; }
+    .title { font-size:  50px; }
+    nav li a { font-size: 30px; }
 
-    .main { padding: 3% 13%; }
+    body { padding: 0 7%; font-size: 24px; }
+    .main { padding: 1% 0.3%; }
 }
-@media (max-width: 640px) {
-    .menu h1, .menu div { text-align: center; }
+@media (max-width: 930px) {
+    header { justify-content: space-evenly; }
+    nav h1, .menu div { text-align: center; }
+    .title { font-size:  40px; }
+    nav li { margin-right: 20px; margin-top: 8px; }
 
-    .main { padding: 5%; }
+    span { display: inline-block; }
+    body { padding: 5%; }
 }
 
-/* リンクリスト */
-.menu div {
-    display: -webkit-flex;
+header {
     display: flex;
-    -webkit-justify-content: space-around;
-    justify-content: space-around;
+    align-items: center;
+    padding-top: 3%;
+}
+
+.title { font-weight: bold; }
+nav ul {
+    list-style: none; 
     align-items: center;
 }
 
@@ -50,11 +60,13 @@ button {
     appearance: none;
 }
 
+
 /* Main */
 body {
     font-family: "M PLUS Rounded 1c", sans-serif;
     color: var(--text-color);
     background-color: var(--background-color);
+    overflow-y: scroll;
 }
 
 /* URLのリンクの配色 */

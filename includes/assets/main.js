@@ -8,7 +8,14 @@ let getTheme = function () {
 
 
 /// テーマを設定する関数です。
-let toggleDarkmode = function (writeCookie=true) {
+let toggleDarkmode = function (writeCookie=true, initialize=false) {
+    // ゆっくりテーマを変えるのを適用する。
+    if (initialize) {
+        let body = document.getElementsByTagName("body")[0];
+        if (!body.classList.contains("late-transition"))
+            body.classList.add("late-transition");
+    };
+    // テーマの変更を行う。
     let theme = document.documentElement.getAttribute("theme");
     if (theme == "dark") {
         theme = "light";
@@ -26,7 +33,7 @@ window.onload = function () {
     if (typeof theme != "undefined"
             && theme != document.documentElement.getAttribute("theme"))
         // テーマを設定する。
-        toggleDarkmode(false);
+        toggleDarkmode(false, false);
     // 全てのアンカーの属性にtarget="_blank"を付ける。
     for (let element of document.getElementsByTagName("a"))
         if (element.getAttribute("href").startsWith("http"))
