@@ -20,18 +20,18 @@
 /* メニューバーとメインコンテンツ(main) */
 @media (min-width: 930px) {
     header { justify-content: space-between; }
+    .title { font-size:  50px; }
     nav ul { display: flex; }
     nav li { margin: 0 10px; }
-    .title { font-size:  50px; }
     nav li a { font-size: 30px; }
 
     body { padding: 0 7%; font-size: 24px; }
-    .main { padding: 1% 0.3%; }
+    .main { padding: 1% 0%; }
 }
 @media (max-width: 930px) {
     header { justify-content: space-evenly; }
-    nav h1, .menu div { text-align: center; }
     .title { font-size:  40px; }
+    nav h1, nav ul { text-align: center; }
     nav li { margin-right: 20px; margin-top: 8px; }
 
     span { display: inline-block; }
