@@ -20,25 +20,23 @@
     <header>
       <div class="title">tasuren</div>
       <nav>
-        <div class="menu">
-          <ul>
-            ^^
-            if "menu" not in self.ctx:
-              # まだメニューが作られていないのなら作る。また、キャッシュを作る。
-              from os import listdir
+        <ul>
+          ^^
+          if "menu" not in self.ctx:
+            # まだメニューが作られていないのなら作る。また、キャッシュを作る。
+            from os import listdir
 
-              self.ctx.menu = "\n".join(
-                '<li><a href="{}.html">{}</a></li>'.format(
-                  filename, "Home" if filename == "index" else filename.capitalize()
-                )
-                for filename in ("index", "about", "skills", "works", "links")
+            self.ctx.menu = "\n".join(
+              '<li><a href="{}.html">{}</a></li>'.format(
+                filename, "Home" if filename == "index" else filename.capitalize()
               )
+              for filename in ("index", "about", "skills", "works", "links")
+            )
 
-            self.ctx.menu
-            ^^
-            <li><button name="toggle-darkmode" onclick="toggleDarkmode(true, true)">🌓</button></li>
-          </ul>
-        </div>
+          self.ctx.menu
+          ^^
+          <li><button name="toggle-darkmode" onclick="toggleDarkmode(true, true)">🌓</button></li>
+        </ul>
       </nav>
     </header>
     <div class="main">^^ self.content ^^</div>
