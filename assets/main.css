@@ -70,7 +70,6 @@ body {
 }
 
 /* URLのリンクの配色 */
-a { font-size: medium; }
 a:link { color: var(--link-color); text-decoration: none; }
 a:visited { color: var(--link-color); text-decoration: none; }
 a:hover { color: var(--link-color); text-decoration: none; }
