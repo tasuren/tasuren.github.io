@@ -7,4 +7,4 @@
 何か伝えたいことがあったりする場合は遠慮なく以下までお願いします。
 
 - メール：[tasuren@aol.com](mailto:tasuren@aol.com)
-- Discord: <code>maovi#5161</code>
+- Discord: `tasuren#5161`
